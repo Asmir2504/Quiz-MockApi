@@ -16,4 +16,4 @@ Final step-Display of your results on the final table.
 
 ![quiz-results](https://github.com/Asmir2504/Quiz-MockApi/assets/123884279/04cbe5e1-d57d-4548-aaaa-793668337a4f)
 
-Soon on Vertical.app 
+LIVE:quiz-mock-api-x7ko.vercel.app
