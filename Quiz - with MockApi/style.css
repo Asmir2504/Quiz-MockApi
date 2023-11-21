@@ -71,7 +71,7 @@ button {
   border: 2px solid #000;
   border-radius: 20px;
   
-  /*animation: rotateColors 9s linear infinite; /* Animacija rotacije boja */
+  animation: rotateColors 9s linear infinite; /* Rotacija logo,slike*/
 }
 
 @keyframes rotateColors {
