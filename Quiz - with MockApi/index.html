@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Kviz </title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div>
+      <nav class="nav">
+        <button id="nav_button_pocetak" class="nav_button active">
+          Početak
+        </button>
+        <button id="nav_button_kviz" class="nav_button">Kviz</button>
+        <button id="nav_button_rezultati" class="nav_button">Rezultati</button>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div id="con_pocetak" class="pocetak">
+        <img src="LOGO12.png" class="logo_front" alt="Kviz znanja logo" />
+
+        <h1 style="font-weight: 600">Dobro došli</h1>
+
+        <p>Unesite Vaše ime i prezime</p>
+
+        <div id="con-create-user-form" class="container">
+          <form id="form-new-user" class="form">
+            <input
+              id="ime-korisnika"
+              type="text"
+              name="firstname"
+              placeholder="Ime"
+              class="frontpage_text_input"
+            />
+            <input
+              id="prezime-korisnika"
+              type="text"
+              name="lastname"
+              placeholder="Prezime"
+              class="frontpage_text_input"
+            />
+            <input
+              id="form-create-user-button"
+              class="form-create-user-button"
+              type="button"
+              value="Započni kviz"
+            />
+            <div>
+              <small
+                id="form-new-user-error"
+                class="boja-obavjestenje display-none"
+                >Upišite Vaše ime i prezime da biste započeli kviz</small
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="con_kviz" class="display-none">
+        <div class="kviz">
+          <h1 style="font-weight: 600; padding-top: 30px">Kviz</h1>
+          <h3 id="kviz-ime-korisnika">
+            Vratite se na početnu stranicu
+             upišite Vaše ime i prezime kako
+            biste odgovarali na pitanja.
+          </h3>
+        </div>
+
+        <div id="kviz-pitanja" class="display-none pitanja">
+          <p>Odgovorite na pitanja ispod</p>
+
+          <div class="okvir">
+            <div id="kviz-okvir">
+              <h2>Pitanja</h2>
+              <hr id="hr-top" />
+
+              <p id="pitanje-okvir"></p>
+              <div class="opcije">
+                <button id="opcija0"><span id="odgovor0"></span></button>
+                <button id="opcija1"><span id="odgovor1"></span></button>
+                <button id="opcija2"><span id="odgovor2"></span></button>
+                <button id="opcija3"><span id="odgovor3"></span></button>
+              </div>
+
+              <hr id="hr-bottom" />
+
+              <div>
+                <p id="broj-trenutnog-pitanja"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="con_rezultati" class="display-none">
+        <div class="rezultati">
+          <h1 style="font-weight: 600; padding-top: 30px">Rezultati</h1>
+
+          <div class="tabela pozadina-kolona">
+            <div class="tabela-red">
+              <div class="tabela-kolona">Ime</div>
+              <div class="tabela-kolona">Prezime</div>
+              <div class="tabela-kolona">Rezultat</div>
+            </div>
+            <div id="tabela-korisnika">
+              <div class="tabela-red pozadina-red">
+                <div class="tabela-kolona"></div>
+                <div class="tabela-kolona"></div>
+                <div class="tabela-kolona"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
